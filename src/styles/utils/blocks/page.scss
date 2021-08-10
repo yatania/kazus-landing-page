@@ -1,0 +1,17 @@
+.page {
+  font-family: Roboto, sans-serif;
+  color: $color-white;
+  font-size: 14px;
+
+  &--hidden {
+    overflow-y: hidden;
+  }
+
+  &__content {
+    margin: 0;
+  }
+
+  &__header {
+    margin: 0 auto;
+  }
+}

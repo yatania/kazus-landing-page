@@ -1,4 +1,102 @@
+@import "./variables";
+@import "./mixins";
+
+%text-list {
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-dark;
+}
+
+%text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-light-green;
+}
+
+%text-bolder {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-primary;
+}
+
+%numbers {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  color: $color-gray;
+}
+
 %h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+
+  @include onMobile {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+%h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 50px;
+  color: $color-primary;
+
+  @include onMobile {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+%h3 {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 30px;
+}
+
+%h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+%header-icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include hover(background-color, $color-primary);
+
+  @include onMobile {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+%page-number {
+  background-color: $color-primary;
+  color: $color-white;
+  font-weight: 700;
+}
+
+%wrapper {
+  max-width: 1200px;
+
+  @include onDesktop {
+    max-width: 960px;
+  }
+
+  @include onTablet {
+    max-width: 800px;
+  }
+
+  @include onMobile {
+    max-width: 540px;
+  }
 }
