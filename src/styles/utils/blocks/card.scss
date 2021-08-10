@@ -1,0 +1,58 @@
+
+.card {
+  padding: 9px 11px 17px;
+  background-color: rgba(241, 245, 245, 0.4);
+  max-width: 321px;
+  display: flex;
+  flex-direction: column;
+  color: $color-primary;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &__product {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-light-green;
+  }
+
+  &__title {
+    @extend %text-bolder;
+  }
+
+  &__delete {
+    background-color: inherit;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 52px;
+    height: 52px;
+    background-color: $color-light-green;
+    border-radius: 50%;
+  }
+
+  &__image {
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__price {
+    padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__number {
+    @extend %h3;
+  }
+}

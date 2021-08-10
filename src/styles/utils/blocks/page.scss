@@ -3,6 +3,10 @@
   color: $color-white;
   font-size: 14px;
 
+  &--hidden {
+    overflow-y: hidden;
+  }
+
   &__content {
     margin: 0;
   }
