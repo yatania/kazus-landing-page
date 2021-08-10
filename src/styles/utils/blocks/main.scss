@@ -54,6 +54,8 @@
   &__picture {
     flex-shrink: 1;
 
+    @include hover(transform, scale(1.1));
+
     @include onMobile {
       display: none;
     }
