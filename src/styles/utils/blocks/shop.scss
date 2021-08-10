@@ -1,0 +1,105 @@
+.shop {
+  &__content {
+    padding: 123px 0 0;
+    margin: 0 auto 60px;
+    @extend %wrapper;
+
+    @include onDesktop {
+      padding-top: 50px;
+    }
+
+    @include onMobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    @extend %h2;
+    padding: 0 15px;
+    margin-bottom: 88px;
+  }
+
+  &__catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 290px);
+    gap: 40px 10px;
+
+    @include onTablet {
+      justify-content: center;
+      gap: 20px;
+    }
+
+    @include onMobile {
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    @include onMobile {
+      &:nth-child(n+5) {
+        display: none;
+      }
+    }
+  }
+
+  &__card-image {
+    margin-bottom: -77px;
+    z-index: 5;
+  }
+
+  &__card-photo {
+    display: block;
+    width: 163px;
+    height: 190px;
+    margin: 0 auto;
+  }
+
+  &__button-prev,
+  &__button-next {
+    background-color: inherit;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  &__pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %numbers;
+    margin-right: 5px;
+    width: 32px;
+    height: 33px;
+    transition: background-color $transition-duration,
+      color $transition-duration,
+      font-weight $transition-duration;
+
+    &:first-of-type {
+      margin-left: 30px;
+    }
+
+    &:last-of-type {
+      margin-right: 30px;
+    }
+
+    &--active {
+      @extend %page-number;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      font-weight: 700;
+    }
+  }
+}

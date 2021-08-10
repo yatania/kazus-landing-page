@@ -1,6 +1,26 @@
+@import "./_variables.scss";
+
 @mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
+  transition: #{$_property} $transition-duration;
   &:hover {
     #{$_property}: $_toValue;
+  }
+}
+
+@mixin onDesktop {
+  @media (max-width: $desktopSize) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: $tabletSize) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: $mobileSize) {
+    @content;
   }
 }

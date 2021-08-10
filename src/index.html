@@ -1,13 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Kazus podatkowy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__content">
+    <header class="header page__header">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="/">
+            <img src="./images/logo.svg" alt="Logo of Kazus">
+          </a>
+        </div>
+        <div class="header__navigation">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                  O Kazusie
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                  O Firmie
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                  Czasopisma
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                  Szkolenia
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                  Baza Wiedzy
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                  Kazus TV
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">
+                Kontakt
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__search">
+            <button class="header__search-button"></button>
+          </div>
+          <div class="header__login">
+            <a href="/" class="header__login-link"></a>
+          </div>
+          <div class="header__basket">
+            <a href="/" class="header__basket-link">
+
+            </a>
+            <span class="header__basket-counter">2</span>
+          </div>
+          <div class="header__hamburger">
+            <button class="header__toggler">
+              <span class="header__toggler-line"></span>
+              <span class="header__toggler-line"></span>
+              <span class="header__toggler-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="main__content">
+        <div class="main__about">
+          <h1 class="main__title">
+            Czasopisma
+          </h1>
+          <h4 class="main__subtitle">
+            Mamy przyjemność oddać w Państwa ręce kolejny numer „Kazusu Podatkowego”, który tym razem poświęcony jest w dużej części zmianom w podatkach w roku 2019.
+          </h4>
+          <p class="main__text">
+            Omówiliśmy najważniejsze zagadnienia takie jak zmiany w zakresie rozliczania kosztów używania samochodów osobowych, wprowadzenie „exit tax” czy zmiany dotyczące poboru podatku u źródła na gruncie podatków dochodowych, poświęcając im odrębne artykuły.
+          </p>
+        </div>
+        <div class="main__picture">
+          <img
+            src="./images/main-book.png"
+            alt="Book Kazus Podatkowy"
+            class="main__image"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="shop">
+      <div class="shop__content">
+        <h2 class="shop__title">
+          Wyszukaj czasopismo
+        </h2>
+        <div class="shop__catalog">
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book1.png"
+                alt="Book of Kazus Podatkowy"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title">
+                Kazus Podatkowy 1(6)2019
+              </h3>
+              <p class="product__price">
+                  98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book1.png"
+                alt="Book of Kazus Podatkowy"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product product--active">
+              <h3 class="product__title">
+                Kazus Podatkowy 1(6)2019
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book3.png"
+                alt="Book of Procedury administracyjne"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title product__title--small-margin">
+                Procedury administracyjne i podatkowe 2
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book4.png"
+                alt="Prawo Pomocy Publicznej"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title">
+                Prawo Pomocy Publicznej
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book1.png"
+                alt="Apple iMac"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title">
+                Kazus Podatkowy 1(6)2019
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book4.png"
+                alt="Prawo Pomocy Publicznej"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title">
+                Prawo Pomocy Publicznej
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book3.png"
+                alt="Book of Procedury administracyjne"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title product__title--small-margin">
+                Procedury administracyjne i podatkowe 2
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+          <article class="shop__card">
+            <div class="shop__card-image">
+              <img
+                src="./images/book4.png"
+                alt="Prawo Pomocy Publicznej"
+                class="shop__card-photo"
+              >
+            </div>
+            <div class="product">
+              <h3 class="product__title">
+                Prawo Pomocy Publicznej
+              </h3>
+              <p class="product__price">
+                98,76
+              </p>
+              <span class="product__tax">
+                + VAT 23%
+              </span>
+              <span class="product__description">
+                SZCZEGÓŁY
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="shop__pages">
+        <button class="shop__button-prev">
+          <img src="./images/arrow-prev.svg" alt="previous arrow">
+        </button>
+        <span class="shop__page">1</span>
+        <span class="shop__page">2</span>
+        <span class="shop__page shop__page--active">3</span>
+        <span class="shop__page">4</span>
+        <span class="shop__page">5</span>
+        <button class="shop__button-next">
+          <img src="./images/arrow-next.svg" alt="next arrow">
+        </button>
+      </div>
+    </section>
+
+    <section class="modal">
+      <button class="modal__closer">
+        <span>x</span>
+      </button>
+      <h3 class="modal__title">
+        Twój koszyk
+      </h3>
+      <article class="modal__card card">
+        <div class="card__product">
+          <div class="card__picture">
+            <img
+              src="./images/book.svg"
+              alt="Book icon"
+              class="card__image"
+            >
+          </div>
+          <h3 class="card__title">
+            Kazus Podatkowy 1(6)2019
+          </h3>
+          <button class="card__delete">
+            <img src="./images/rubbish-bin.svg" alt="Rubbish icon">
+          </button>
+        </div>
+        <div class="card__price">
+          <span class="card__text">Cena</span>
+          <span class="card__number">98,00 PLN</span>
+        </div>
+      </article>
+      <article class="modal__card card">
+        <div class="card__product">
+          <div class="card__picture">
+            <img
+              src="./images/location-pin.svg"
+              alt="Book icon"
+              class="card__image"
+            >
+          </div>
+          <h3 class="card__title">
+            Praktyczne problemy związane z realizacją podatku rolnego...
+          </h3>
+          <button class="card__delete">
+            <img src="./images/rubbish-bin.svg" alt="Rubbish icon">
+          </button>
+        </div>
+        <div class="card__price">
+          <span class="card__text">Cena</span>
+          <span class="card__number">98,00 PLN</span>
+        </div>
+      </article>
+      <article class="modal__card card">
+        <div class="card__product">
+          <div class="card__picture">
+            <img
+              src="./images/book.svg"
+              alt="Book icon"
+              class="card__image"
+            >
+          </div>
+          <h3 class="card__title">
+            Kazus Podatkowy 1(6)2019
+          </h3>
+          <button class="card__delete">
+            <img src="./images/rubbish-bin.svg" alt="Rubbish icon">
+          </button>
+        </div>
+        <div class="card__price">
+          <span class="card__text">Cena</span>
+          <span class="card__number">98,00 PLN</span>
+        </div>
+      </article>
+      <div class="modal__total">
+        <div class="modal__info">
+          <h3 class="modal__title">
+            Łączna kwota
+          </h3>
+          <p class="modal__text">
+            979,00 PLN
+            <span class="modal__tax">
+              + VAT 23%
+            </span>
+          </p>
+
+        </div>
+        <button class="modal__submit">
+          PRZEJDŹ DO KOSZYKA
+        </button>
+      </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

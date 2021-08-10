@@ -1,0 +1,13 @@
+.page {
+  font-family: Roboto, sans-serif;
+  color: $color-white;
+  font-size: 14px;
+
+  &__content {
+    margin: 0;
+  }
+
+  &__header {
+    margin: 0 auto;
+  }
+}

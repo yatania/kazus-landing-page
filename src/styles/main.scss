@@ -1,7 +1,125 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./reset";
+@import "./utils";
 
-body {
-  background: $c-gray;
+@import "./utils/blocks/page.scss";
+@import "./utils/blocks/header.scss";
+@import "./utils/blocks/nav.scss";
+@import "./utils/blocks/main.scss";
+@import "./utils/blocks/shop.scss";
+@import "./utils/blocks/product.scss";
+
+.modal {
+  position: relative;
+  padding: 10px 28px 20px;
+  max-width: 381px;
+
+  &__title {
+    @extend %h3;
+    color: $color-dark;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__closer {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 41px;
+    height: 41px;
+    font-size: 24px;
+    border: 1px solid transparent;
+    background-color: $color-primary;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  &__card {
+    margin: 0 auto;
+  }
+
+  &__submit {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    border: 1px solid transparent;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-primary;
+
+    .modal__title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tax {
+    display: block;
+  }
+}
+
+.card {
+  padding: 9px 22px 17px;
+  background-color: rgba(241, 245, 245, 0.4);
+  max-width: 321px;
+  display: flex;
+  flex-direction: column;
+  color: $color-primary;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  &__product {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-light-green;
+  }
+
+  &__title {
+    @extend %text-bolder;
+  }
+
+  &__delete {
+    background-color: inherit;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 52px;
+    height: 52px;
+    background-color: $color-light-green;
+    border-radius: 50%;
+  }
+
+  &__image {
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__price {
+    padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__number {
+    @extend %h3;
+  }
 }

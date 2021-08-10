@@ -1,0 +1,34 @@
+.nav {
+  &__list {
+    display: flex;
+    padding-right: 73px;
+
+    @include onDesktop {
+      padding-right: 50px;
+    }
+
+    @include onTablet {
+      display: none;
+      opacity: 0;
+    }
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 30px;
+
+    @include onDesktop {
+      margin-left: 20px;
+    }
+
+    @include onTablet {
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    @extend %text-list;
+    color: $color-dark;
+
+    @include hover(color, $color-primary);
+  }
+}
