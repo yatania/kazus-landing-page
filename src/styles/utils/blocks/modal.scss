@@ -19,7 +19,8 @@
   @include onMobile {
     position: absolute;
     top: 50px;
-    right: 0;
+    right: -40px;
+    width: 90vw;
   }
 
   &--opener {
@@ -95,13 +96,9 @@
       content: "";
       position: absolute;
       top: 0;
-      left: -28px;
-      width: 381px;
+      left: 0;
+      right: 0;
       border-top: 1px solid $color-light-gray;
-
-      @include onMobile {
-        width: 90vw;
-      }
     }
   }
 }
